@@ -13,5 +13,10 @@
  	public void sumsEmptyStringTo0() {
  		assertThat(StringCalculator.sum(""), is(0));
  	}
+ 	@Test
+ 	public void sumsSingleNumberToItself() {
+ 		assertThat(StringCalculator.sum("5"), is(5));
+ 		assertThat(StringCalculator.sum("42"), is(42));
+ 	}
 
  }
