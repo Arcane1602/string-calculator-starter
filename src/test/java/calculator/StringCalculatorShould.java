@@ -23,5 +23,10 @@
  		assertThat(StringCalculator.sum("1,2"), is(3));
  		assertThat(StringCalculator.sum("1,3"), is(4));
  	}
+ 	@Test
+ 	public void sumsThreeNumbersSeperatedByComma() {
+ 		assertThat(StringCalculator.sum("1,2,3"), is(6));
+ 	}
+
 
  }
