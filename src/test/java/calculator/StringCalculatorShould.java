@@ -37,5 +37,12 @@
  	}
 
 
+ 	@Test
+ 	public void usesDelimiterSepcified() {
+ 		assertThat(StringCalculator.sum("//;\n1;2"), is(3));
+ 		assertThat(StringCalculator.sum("//.\n2.3.1"), is(6));
+ 	}
+
+
 
  }
