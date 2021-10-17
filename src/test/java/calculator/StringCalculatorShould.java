@@ -53,6 +53,14 @@
 
  		StringCalculator.sum("-3");
  	}
+ 	@Test
+ 	public void throwsOnNegativeNumbersWithAllNumbersInExceptionMessage() {
+ 		expectedException.expect(IllegalArgumentException.class);
+ 		expectedException.expectMessage("negative number: -3,-5,-13");
+
+ 		StringCalculator.sum("1,-3,5,-5,-13");
+ 	}
+
 
 
 
