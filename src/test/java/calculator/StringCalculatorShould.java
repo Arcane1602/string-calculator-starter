@@ -72,7 +72,11 @@
  		assertThat(StringCalculator.sum("//[***]\n1***2***3"), is(6));
  	}
 
-
+ 	@Test
+ 	public void acceptsMultipleDelimiters() {
+ 		assertThat(StringCalculator.sum("//[-][;]\n1-2;3"), is(6));
+ 		assertThat(StringCalculator.sum("//[--][...]\n2--3...4"), is(9));
+ 	}
 
 
 
