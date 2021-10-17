@@ -67,6 +67,13 @@
  		assertThat(StringCalculator.sum("1040,10002"), is(42));
  	}
 
+ 	@Test
+ 	public void acceptsDelimiterOfArbitraryLength() {
+ 		assertThat(StringCalculator.sum("//[***]\n1***2***3"), is(6));
+ 	}
+
+
+
 
 
 
