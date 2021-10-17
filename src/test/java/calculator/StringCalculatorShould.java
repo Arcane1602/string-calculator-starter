@@ -18,5 +18,10 @@
  		assertThat(StringCalculator.sum("5"), is(5));
  		assertThat(StringCalculator.sum("42"), is(42));
  	}
+ 	@Test
+ 	public void sumsTwoNumbersSeperatedByComma() {
+ 		assertThat(StringCalculator.sum("1,2"), is(3));
+ 		assertThat(StringCalculator.sum("1,3"), is(4));
+ 	}
 
  }
